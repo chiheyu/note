@@ -1,0 +1,95 @@
+{
+  "customOrder": {
+    "/": {
+      "children": [
+        "考研数学",
+        "考研英语"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研数学": {
+      "children": [
+        "考研数学/第一章 函数与极限",
+        "考研数学/第二章 导数与微分",
+        "考研数学/第三章 微分中值定理与导数的应用",
+        "考研数学/第四章 不定积分",
+        "考研数学/第五章 定积分"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研数学/第二章 导数与微分": {
+      "children": [
+        "考研数学/第二章 导数与微分/第二章 导数与微分.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研数学/第三章 微分中值定理与导数的应用": {
+      "children": [
+        "考研数学/第三章 微分中值定理与导数的应用/第三章 微分中值定理与导数的应用.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研数学/第四章 不定积分": {
+      "children": [
+        "考研数学/第四章 不定积分/第四章 不定积分.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研数学/第五章 定积分": {
+      "children": [
+        "考研数学/第五章 定积分/第五章 定积分.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研数学/第一章 函数与极限": {
+      "children": [
+        "考研数学/第一章 函数与极限/assets",
+        "考研数学/第一章 函数与极限/第一章 函数与极限.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研数学/第一章 函数与极限/assets": {
+      "children": [
+        "考研数学/第一章 函数与极限/assets/第一章 函数、极限与连续"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研数学/第一章 函数与极限/assets/第一章 函数、极限与连续": {
+      "children": [
+        "考研数学/第一章 函数与极限/assets/第一章 函数、极限与连续/file-20260314.jpg",
+        "考研数学/第一章 函数与极限/assets/第一章 函数、极限与连续/file-20260314 1.jpg"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研英语": {
+      "children": [
+        "考研英语/英语单词",
+        "考研英语/英语语法",
+        "考研英语/组词"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研英语/英语单词": {
+      "children": [
+        "考研英语/英语单词/5500词P105-P114.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研英语/英语语法": {
+      "children": [
+        "考研英语/英语语法/英语句子成分、从句与语气.md",
+        "考研英语/英语语法/英语时态和语态.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研英语/组词": {
+      "children": [
+        "考研英语/组词/词根、词缀大全.md"
+      ],
+      "sortOrder": "custom"
+    }
+  },
+  "sortOrder": "custom",
+  "debugMode": false,
+  "newItemPlacement": "top"
+}
