@@ -2,9 +2,9 @@
   "customOrder": {
     "/": {
       "children": [
-        "technology",
         "考研数学",
-        "考研英语"
+        "考研英语",
+        "technology"
       ],
       "sortOrder": "custom"
     },
@@ -45,6 +45,7 @@
     "考研数学/第一章 函数与极限": {
       "children": [
         "考研数学/第一章 函数与极限/assets",
+        "考研数学/第一章 函数与极限/测试.md",
         "考研数学/第一章 函数与极限/第一章 函数与极限.md"
       ],
       "sortOrder": "custom"
@@ -66,7 +67,8 @@
       "children": [
         "考研英语/英语单词",
         "考研英语/英语语法",
-        "考研英语/组词"
+        "考研英语/组词",
+        "考研英语/5500词P105-P114.md"
       ],
       "sortOrder": "custom"
     },
