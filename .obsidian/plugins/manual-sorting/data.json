@@ -2,6 +2,7 @@
   "customOrder": {
     "/": {
       "children": [
+        "Excalidraw",
         "考研数学",
         "考研英语",
         "technology"
@@ -87,6 +88,13 @@
     "考研英语/组词": {
       "children": [
         "考研英语/组词/词根、词缀大全.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "Excalidraw": {
+      "children": [
+        "Excalidraw/test.excalidraw.md",
+        "Excalidraw/Drawing 2026-03-16 16.50.29.excalidraw.md"
       ],
       "sortOrder": "custom"
     },
