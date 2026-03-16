@@ -35,12 +35,6 @@
       ],
       "sortOrder": "custom"
     },
-    "考研数学/第五章 定积分": {
-      "children": [
-        "考研数学/第五章 定积分/第五章 定积分.md"
-      ],
-      "sortOrder": "custom"
-    },
     "考研数学/第一章 函数与极限": {
       "children": [
         "考研数学/第一章 函数与极限/测试.md",
@@ -85,6 +79,12 @@
     "考研英语/组词": {
       "children": [
         "考研英语/组词/词根、词缀大全.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研数学/第五章 定积分": {
+      "children": [
+        "考研数学/第五章 定积分/第五章 定积分.md"
       ],
       "sortOrder": "custom"
     }
