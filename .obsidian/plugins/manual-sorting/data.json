@@ -92,10 +92,7 @@
       "sortOrder": "custom"
     },
     "Excalidraw": {
-      "children": [
-        "Excalidraw/test.excalidraw.md",
-        "Excalidraw/Drawing 2026-03-16 16.50.29.excalidraw.md"
-      ],
+      "children": [],
       "sortOrder": "custom"
     },
     "technology": {
