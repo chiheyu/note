@@ -73,6 +73,7 @@
     },
     "考研英语/英语单词": {
       "children": [
+        "考研英语/英语单词/assets",
         "考研英语/英语单词/5500词P105-P114.md"
       ],
       "sortOrder": "custom"
@@ -100,6 +101,10 @@
       "children": [
         "technology/create_containers/openclaw-container-guide.md"
       ],
+      "sortOrder": "custom"
+    },
+    "考研英语/英语单词/assets": {
+      "children": [],
       "sortOrder": "custom"
     }
   },
