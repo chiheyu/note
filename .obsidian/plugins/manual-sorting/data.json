@@ -66,14 +66,12 @@
       "children": [
         "考研英语/英语单词",
         "考研英语/英语语法",
-        "考研英语/组词",
-        "考研英语/5500词P105-P114.md"
+        "考研英语/组词"
       ],
       "sortOrder": "custom"
     },
     "考研英语/英语单词": {
       "children": [
-        "考研英语/英语单词/assets",
         "考研英语/英语单词/5500词P105-P114.md"
       ],
       "sortOrder": "custom"
@@ -93,18 +91,9 @@
     },
     "technology": {
       "children": [
-        "technology/create_containers"
+        "technology/Git 与 GitHub 从零上手.md",
+        "technology/openclaw-container-guide.md"
       ],
-      "sortOrder": "custom"
-    },
-    "technology/create_containers": {
-      "children": [
-        "technology/create_containers/openclaw-container-guide.md"
-      ],
-      "sortOrder": "custom"
-    },
-    "考研英语/英语单词/assets": {
-      "children": [],
       "sortOrder": "custom"
     }
   },
