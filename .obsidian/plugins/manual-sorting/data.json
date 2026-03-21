@@ -71,12 +71,6 @@
       ],
       "sortOrder": "custom"
     },
-    "考研英语/陌生词汇": {
-      "children": [
-        "考研英语/陌生词汇/陌生词汇.md"
-      ],
-      "sortOrder": "custom"
-    },
     "考研英语/英语单词": {
       "children": [
         "考研英语/英语单词/5500词P105-P114.md"
@@ -100,6 +94,12 @@
       "children": [
         "technology/Git 与 GitHub 从零上手.md",
         "technology/openclaw-container-guide.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研英语/陌生词汇": {
+      "children": [
+        "考研英语/陌生词汇/陌生词汇.md"
       ],
       "sortOrder": "custom"
     }
