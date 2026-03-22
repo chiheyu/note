@@ -2,6 +2,7 @@
   "customOrder": {
     "/": {
       "children": [
+        "conflict-files-obsidian-git.md",
         "考研数学",
         "考研英语",
         "technology"
