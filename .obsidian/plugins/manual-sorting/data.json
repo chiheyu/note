@@ -2,7 +2,6 @@
   "customOrder": {
     "/": {
       "children": [
-        "conflict-files-obsidian-git.md",
         "考研数学",
         "考研英语",
         "technology"
@@ -99,6 +98,7 @@
     },
     "technology": {
       "children": [
+        "technology/Hanzhong-Elec-AfterSale-Mini-前后端联调任务清单.md",
         "technology/Git 与 GitHub 从零上手.md",
         "technology/openclaw-container-guide.md"
       ],
