@@ -98,6 +98,7 @@
     },
     "technology": {
       "children": [
+        "technology/配件订单商家可见性与店铺归属问题拆解.md",
         "technology/Hanzhong-Elec-AfterSale-Mini-前五阶段任务详解.md",
         "technology/Hanzhong-Elec-AfterSale-Mini-前后端联调任务清单.md",
         "technology/Git 与 GitHub 从零上手.md",

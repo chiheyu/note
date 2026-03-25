@@ -19,9 +19,10 @@
 - 镜像：`alpine/openclaw:latest`
 - 配置卷：`openclaw_home`
 - 宿主机端口：`127.0.0.1:18789 -> 18789`
+- 安全参数：`--security-opt no-new-privileges:true`、`--cap-drop ALL`
 - 已挂载笔记目录：
   - Windows：`D:\Obsidian\note`
-  - 容器内：`/mnt/obsidian-note`
+  - 容器内：`/mnt/obsidian-note`（只读）
 
 说明：
 
@@ -85,7 +86,8 @@ docker volume ls | findstr openclaw_home
 - 删除旧的 `openclaw`
 - 保留 `openclaw_home`
 - 只允许本机访问 `127.0.0.1:18789`
-- 把 `D:\Obsidian\note` 挂到容器内
+- 把 `D:\Obsidian\note` 只读挂到容器内
+- 去掉不需要的 Linux capabilities，并阻止提权
 
 ```powershell
 docker rm -f openclaw
@@ -93,11 +95,33 @@ docker rm -f openclaw
 docker run -d --name openclaw `
   --restart unless-stopped `
   -p 127.0.0.1:18789:18789 `
+  --security-opt no-new-privileges:true `
+  --cap-drop ALL `
   --mount type=volume,src=openclaw_home,dst=/home/node/.openclaw `
-  --mount type=bind,src=D:\Obsidian\note,dst=/mnt/obsidian-note `
+  --mount type=bind,src=D:\Obsidian\note,dst=/mnt/obsidian-note,readonly `
   alpine/openclaw:latest `
   node openclaw.mjs gateway --allow-unconfigured --bind lan --port 18789
 ```
+
+---
+
+## 额外安全收紧
+
+在这套用法里，我当前采用的是：
+
+- 宿主机端口只发布到 `127.0.0.1`
+- 笔记目录默认用 `readonly` 挂载
+- 加上 `--security-opt no-new-privileges:true`
+- 加上 `--cap-drop ALL`
+
+这样做的含义是：
+
+- OpenClaw 仍然能读到笔记库
+- OpenClaw 自己的状态仍然写在 `openclaw_home`
+- 容器拿不到多余的 Linux capabilities
+- 即使进程被利用，也更难在容器内继续提权
+
+如果以后你明确需要让 OpenClaw 直接改本地文件，再把 `readonly` 去掉。
 
 ---
 
@@ -176,8 +200,10 @@ docker rm -f openclaw
 docker run -d --name openclaw `
   --restart unless-stopped `
   -p 127.0.0.1:18789:18789 `
+  --security-opt no-new-privileges:true `
+  --cap-drop ALL `
   --mount type=volume,src=openclaw_home,dst=/home/node/.openclaw `
-  --mount type=bind,src=D:\Obsidian\note,dst=/mnt/obsidian-note `
+  --mount type=bind,src=D:\Obsidian\note,dst=/mnt/obsidian-note,readonly `
   --mount type=bind,src=E:\data,dst=/mnt/host-e-data `
   alpine/openclaw:latest `
   node openclaw.mjs gateway --allow-unconfigured --bind lan --port 18789
@@ -273,6 +299,6 @@ E:\some-folder
 - Docker 卷：
   - `openclaw_home -> /home/node/.openclaw`
 - Windows 目录挂载：
-  - `D:\Obsidian\note -> /mnt/obsidian-note`
+  - `D:\Obsidian\note -> /mnt/obsidian-note`（只读）
 
 如果后面你又增加新的挂载，记得同步更新这篇笔记。
