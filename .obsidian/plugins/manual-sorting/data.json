@@ -2,6 +2,7 @@
   "customOrder": {
     "/": {
       "children": [
+        "考研政治",
         "考研数学",
         "考研英语",
         "technology"
@@ -117,8 +118,32 @@
       ],
       "sortOrder": "custom"
     },
+    "考研政治": {
+      "children": [
+        "考研政治/马克思主义基本原理",
+        "考研政治/毛泽东思想和中国特色社会主义思想概述"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研政治/马克思主义基本原理": {
+      "children": [
+        "考研政治/马克思主义基本原理/第一章 世间的物质性及发展规律.md",
+        "考研政治/马克思主义基本原理/第二章 实践与认识及其发展规律.md",
+        "考研政治/马克思主义基本原理/第三章 人类社会及其本质发展规律.md",
+        "考研政治/马克思主义基本原理/第四章 资本主义的本质与规律.md",
+        "考研政治/马克思主义基本原理/第五章 资本主义的发展及其趋势.md",
+        "考研政治/马克思主义基本原理/第六章 社会主义的发展及其规律.md",
+        "考研政治/马克思主义基本原理/第七章 共产主义崇高理想及其最终实现.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研政治/毛泽东思想和中国特色社会主义思想概述": {
+      "children": [],
+      "sortOrder": "custom"
+    },
     "technology": {
       "children": [
+        "technology/计算机设计大赛.md",
         "technology/配件订单商家可见性与店铺归属问题拆解.md",
         "technology/Hanzhong-Elec-AfterSale-Mini-前五阶段任务详解.md",
         "technology/Hanzhong-Elec-AfterSale-Mini-前后端联调任务清单.md",
