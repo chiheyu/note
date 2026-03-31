@@ -20,10 +20,9 @@
 - 配置卷：`openclaw_home`
 - 宿主机端口：`127.0.0.1:18789 -> 18789`
 - 安全参数：`--security-opt no-new-privileges:true`、`--cap-drop ALL`
-- 网络模式：`bridge`
 - 已挂载笔记目录：
   - Windows：`D:\Obsidian\note`
-  - 容器内：`/mnt/obsidian-note`（读写）
+  - 容器内：`/mnt/obsidian-note`（只读）
 
 说明：
 
@@ -87,8 +86,7 @@ docker volume ls | findstr openclaw_home
 - 删除旧的 `openclaw`
 - 保留 `openclaw_home`
 - 只允许本机访问 `127.0.0.1:18789`
-- 把 `D:\Obsidian\note` 以读写方式挂到容器内
-- 让容器保留默认 `bridge` 网络以访问互联网
+- 把 `D:\Obsidian\note` 只读挂到容器内
 - 去掉不需要的 Linux capabilities，并阻止提权
 
 ```powershell
@@ -96,12 +94,11 @@ docker rm -f openclaw
 
 docker run -d --name openclaw `
   --restart unless-stopped `
-  --network bridge `
   -p 127.0.0.1:18789:18789 `
   --security-opt no-new-privileges:true `
   --cap-drop ALL `
   --mount type=volume,src=openclaw_home,dst=/home/node/.openclaw `
-  --mount type=bind,src=D:\Obsidian\note,dst=/mnt/obsidian-note `
+  --mount type=bind,src=D:\Obsidian\note,dst=/mnt/obsidian-note,readonly `
   alpine/openclaw:latest `
   node openclaw.mjs gateway --allow-unconfigured --bind lan --port 18789
 ```
@@ -113,40 +110,18 @@ docker run -d --name openclaw `
 在这套用法里，我当前采用的是：
 
 - 宿主机端口只发布到 `127.0.0.1`
-- OpenClaw 在容器内继续用 `--bind lan`
-- 笔记目录默认用读写挂载
-- 保留默认 `bridge` 网络，让容器可以访问互联网
+- 笔记目录默认用 `readonly` 挂载
 - 加上 `--security-opt no-new-privileges:true`
 - 加上 `--cap-drop ALL`
 
 这样做的含义是：
 
-- OpenClaw 在容器内监听 `0.0.0.0:18789`
-- Docker 只把这个端口发布到宿主机的 `127.0.0.1`
-- OpenClaw 可以直接读写笔记库
+- OpenClaw 仍然能读到笔记库
 - OpenClaw 自己的状态仍然写在 `openclaw_home`
-- 容器可以正常访问外网 API
 - 容器拿不到多余的 Linux capabilities
 - 即使进程被利用，也更难在容器内继续提权
 
-如果你以后只想让它做只读分析，再把挂载改回 `readonly`。
-
----
-
-## 关于联网和 TLS
-
-这套配置里，容器默认走 Docker 的 `bridge` 网络，因此：
-
-- DNS 解析和普通出网请求通常可直接使用
-- 调 OpenAI、Anthropic、GitHub 之类外部 API 没问题
-
-如果你在宿主机开启了本地代理，容器里的 HTTPS 请求有时会出现证书链校验失败，例如：
-
-```text
-unable to get local issuer certificate
-```
-
-这通常不是“容器不能联网”，而是代理替换了 TLS 证书，但容器里没有对应的根证书。
+如果以后你明确需要让 OpenClaw 直接改本地文件，再把 `readonly` 去掉。
 
 ---
 
@@ -224,12 +199,11 @@ docker rm -f openclaw
 
 docker run -d --name openclaw `
   --restart unless-stopped `
-  --network bridge `
   -p 127.0.0.1:18789:18789 `
   --security-opt no-new-privileges:true `
   --cap-drop ALL `
   --mount type=volume,src=openclaw_home,dst=/home/node/.openclaw `
-  --mount type=bind,src=D:\Obsidian\note,dst=/mnt/obsidian-note `
+  --mount type=bind,src=D:\Obsidian\note,dst=/mnt/obsidian-note,readonly `
   --mount type=bind,src=E:\data,dst=/mnt/host-e-data `
   alpine/openclaw:latest `
   node openclaw.mjs gateway --allow-unconfigured --bind lan --port 18789
@@ -325,6 +299,6 @@ E:\some-folder
 - Docker 卷：
   - `openclaw_home -> /home/node/.openclaw`
 - Windows 目录挂载：
-  - `D:\Obsidian\note -> /mnt/obsidian-note`（读写）
+  - `D:\Obsidian\note -> /mnt/obsidian-note`（只读）
 
 如果后面你又增加新的挂载，记得同步更新这篇笔记。
