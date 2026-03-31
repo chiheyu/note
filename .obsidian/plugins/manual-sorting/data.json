@@ -101,7 +101,24 @@
     },
     "考研英语/英语单词": {
       "children": [
-        "考研英语/英语单词/5500词P105-P114.md"
+        "考研英语/英语单词/assets",
+        "考研英语/英语单词/5500词P105-P114.md",
+        "考研英语/英语单词/5500词P115-P124.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研英语/英语单词/assets": {
+      "children": [
+        "考研英语/英语单词/assets/P115.jpg",
+        "考研英语/英语单词/assets/P116.jpg",
+        "考研英语/英语单词/assets/P117.jpg",
+        "考研英语/英语单词/assets/P118.jpg",
+        "考研英语/英语单词/assets/P119.jpg",
+        "考研英语/英语单词/assets/P120.jpg",
+        "考研英语/英语单词/assets/P121.jpg",
+        "考研英语/英语单词/assets/P122.jpg",
+        "考研英语/英语单词/assets/P123.jpg",
+        "考研英语/英语单词/assets/P124.jpg"
       ],
       "sortOrder": "custom"
     },
