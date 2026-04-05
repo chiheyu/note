@@ -2,8 +2,6 @@
   "customOrder": {
     "/": {
       "children": [
-        "/考研数学",
-        "/考研政治",
         "考研政治",
         "考研数学",
         "考研英语",
@@ -156,30 +154,6 @@
         "technology/Hanzhong-Elec-AfterSale-Mini-前后端联调任务清单.md",
         "technology/Git 与 GitHub 从零上手.md",
         "technology/openclaw-container-guide.md"
-      ],
-      "sortOrder": "custom"
-    },
-    "/考研政治": {
-      "children": [
-        "/考研政治/马克思主义基本原理"
-      ],
-      "sortOrder": "custom"
-    },
-    "/考研政治/马克思主义基本原理": {
-      "children": [
-        "/考研政治/马克思主义基本原理/第三章 人类社会及其本质发展规律.md"
-      ],
-      "sortOrder": "custom"
-    },
-    "/考研数学": {
-      "children": [
-        "/考研数学/第二章 导数与微分"
-      ],
-      "sortOrder": "custom"
-    },
-    "/考研数学/第二章 导数与微分": {
-      "children": [
-        "/考研数学/第二章 导数与微分/第二章 导数与微分.md"
       ],
       "sortOrder": "custom"
     }
