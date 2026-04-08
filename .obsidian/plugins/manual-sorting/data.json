@@ -11,6 +11,7 @@
     },
     "考研数学": {
       "children": [
+        "考研数学/补充知识",
         "考研数学/第一章 函数与极限",
         "考研数学/第二章 导数与微分",
         "考研数学/第三章 微分中值定理与导数的应用",
@@ -154,6 +155,12 @@
         "technology/Hanzhong-Elec-AfterSale-Mini-前后端联调任务清单.md",
         "technology/Git 与 GitHub 从零上手.md",
         "technology/openclaw-container-guide.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研数学/补充知识": {
+      "children": [
+        "考研数学/补充知识/穿针引线法.md"
       ],
       "sortOrder": "custom"
     }
