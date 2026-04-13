@@ -173,6 +173,7 @@
     },
     "technology": {
       "children": [
+        "technology/Hyper-V环境GNS3 VM 3.0.6 固定IP配置全指南（含公网连接建议）.md",
         "technology/后端接口报告.md",
         "technology/RuoYi后端接口报告.md",
         "technology/计算机设计大赛.md",
