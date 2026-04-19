@@ -16,12 +16,14 @@
         "考研数学/第二章 导数与微分",
         "考研数学/第三章 微分中值定理与导数的应用",
         "考研数学/第四章 不定积分",
-        "考研数学/第五章 定积分"
+        "考研数学/第五章 定积分",
+        "考研数学/第六章 微分方程"
       ],
       "sortOrder": "custom"
     },
     "考研数学/补充知识": {
       "children": [
+        "考研数学/补充知识/常见曲线.md",
         "考研数学/补充知识/积分表.md",
         "考研数学/补充知识/穿针引线法.md",
         "考研数学/补充知识/三角函数补充公式与图像直觉.md"
@@ -173,6 +175,7 @@
     },
     "technology": {
       "children": [
+        "technology/NotebookLM-汉中电子售后项目速览.md",
         "technology/Hyper-V环境GNS3 VM 3.0.6 固定IP配置全指南（含公网连接建议）.md",
         "technology/后端接口报告.md",
         "technology/RuoYi后端接口报告.md",
@@ -181,6 +184,12 @@
         "technology/Hanzhong-Elec-AfterSale-Mini-前后端联调任务清单.md",
         "technology/Git 与 GitHub 从零上手.md",
         "technology/openclaw-container-guide.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研数学/第六章 微分方程": {
+      "children": [
+        "考研数学/第六章 微分方程/第六章 微分方程.md"
       ],
       "sortOrder": "custom"
     }
