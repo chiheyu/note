@@ -258,6 +258,18 @@
       ],
       "sortOrder": "custom"
     },
+    "考研数学/高等数学/第七章 微分方程/补充笔记": {
+      "children": [
+        "考研数学/高等数学/第七章 微分方程/补充笔记/经典例题"
+      ],
+      "sortOrder": "custom"
+    },
+    "考研数学/高等数学/第七章 微分方程/补充笔记/经典例题": {
+      "children": [
+        "考研数学/高等数学/第七章 微分方程/补充笔记/经典例题/链式法则深度应用.md"
+      ],
+      "sortOrder": "custom"
+    },
     "考研数学/高等数学/第三章 微分中值定理与导数的应用": {
       "children": [
         "考研数学/高等数学/第三章 微分中值定理与导数的应用/第三章 微分中值定理与导数的应用.md"
@@ -511,18 +523,6 @@
         "technology/RuoYi后端接口报告.md",
         "technology/Git 与 GitHub 从零上手.md",
         "technology/openclaw-container-guide.md"
-      ],
-      "sortOrder": "custom"
-    },
-    "考研数学/高等数学/第七章 微分方程/补充笔记": {
-      "children": [
-        "考研数学/高等数学/第七章 微分方程/补充笔记/经典例题"
-      ],
-      "sortOrder": "custom"
-    },
-    "考研数学/高等数学/第七章 微分方程/补充笔记/经典例题": {
-      "children": [
-        "考研数学/高等数学/第七章 微分方程/补充笔记/经典例题/链式法则深度应用.md"
       ],
       "sortOrder": "custom"
     }
