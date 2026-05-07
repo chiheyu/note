@@ -290,6 +290,12 @@
       ],
       "sortOrder": "custom"
     },
+    "考研数学/高等数学/第三章 微分中值定理与导数的应用/补充笔记": {
+      "children": [
+        "考研数学/高等数学/第三章 微分中值定理与导数的应用/补充笔记/高等数学笔记：中值定理证明与辅助函数构造.md"
+      ],
+      "sortOrder": "custom"
+    },
     "考研数学/高等数学/第十一章 三重积分、曲线和曲面积分": {
       "children": [
         "考研数学/高等数学/第十一章 三重积分、曲线和曲面积分/第十一章 三重积分、曲线和曲面积分.md"
@@ -537,12 +543,6 @@
         "technology/RuoYi后端接口报告.md",
         "technology/Git 与 GitHub 从零上手.md",
         "technology/openclaw-container-guide.md"
-      ],
-      "sortOrder": "custom"
-    },
-    "考研数学/高等数学/第三章 微分中值定理与导数的应用/补充笔记": {
-      "children": [
-        "考研数学/高等数学/第三章 微分中值定理与导数的应用/补充笔记/高等数学笔记：中值定理证明与辅助函数构造.md"
       ],
       "sortOrder": "custom"
     }
