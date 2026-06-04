@@ -12,7 +12,6 @@
     },
     "/": {
       "children": [
-        "CLAUDE.md",
         "408",
         "考研政治",
         "考研数学",
@@ -82,8 +81,18 @@
     },
     "408/数据结构/assets": {
       "children": [
+        "408/数据结构/assets/第六章 图",
         "408/数据结构/assets/第四章 树与二叉树",
         "408/数据结构/assets/第一章 数据结构与算法基本概念"
+      ],
+      "sortOrder": "custom"
+    },
+    "408/数据结构/assets/第六章 图": {
+      "children": [
+        "408/数据结构/assets/第六章 图/file-20260526 1.png",
+        "408/数据结构/assets/第六章 图/file-20260526 2.png",
+        "408/数据结构/assets/第六章 图/file-20260526 3.png",
+        "408/数据结构/assets/第六章 图/file-20260526 4.png"
       ],
       "sortOrder": "custom"
     },
@@ -418,24 +427,11 @@
     },
     "考研数学/线性代数/第二章 矩阵": {
       "children": [
-        "考研数学/线性代数/第二章 矩阵/assets",
         "考研数学/线性代数/第二章 矩阵/第一节 矩阵的基本概念与特殊矩阵.md",
         "考研数学/线性代数/第二章 矩阵/第二节 矩阵的运算及性质.md",
         "考研数学/线性代数/第二章 矩阵/第三节 矩阵的逆矩阵.md",
         "考研数学/线性代数/第二章 矩阵/第四节 矩阵的秩.md",
         "考研数学/线性代数/第二章 矩阵/第五节 矩阵等价.md"
-      ],
-      "sortOrder": "custom"
-    },
-    "考研数学/线性代数/第二章 矩阵/assets": {
-      "children": [
-        "考研数学/线性代数/第二章 矩阵/assets/第三节 矩阵的逆矩阵"
-      ],
-      "sortOrder": "custom"
-    },
-    "考研数学/线性代数/第二章 矩阵/assets/第三节 矩阵的逆矩阵": {
-      "children": [
-        "考研数学/线性代数/第二章 矩阵/assets/第三节 矩阵的逆矩阵/file-20260524.jpg"
       ],
       "sortOrder": "custom"
     },
@@ -599,6 +595,7 @@
     },
     "technology": {
       "children": [
+        "technology/Wallpaper Engine 场景壁纸修复与重新打包流程记录.md",
         "technology/Git 与 GitHub 从零上手.md",
         "technology/Git 本地与远程同时修改时的冲突处理.md",
         "technology/NotebookLM-汉中电子售后项目速览.md",
