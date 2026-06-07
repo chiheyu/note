@@ -16,7 +16,8 @@
         "考研政治",
         "考研数学",
         "考研英语",
-        "technology"
+        "technology",
+        "java"
       ],
       "sortOrder": "custom"
     },
@@ -115,8 +116,8 @@
     "考研数学": {
       "children": [
         "考研数学/高等数学",
-        "考研数学/概率论",
-        "考研数学/线性代数"
+        "考研数学/线性代数",
+        "考研数学/概率论"
       ],
       "sortOrder": "custom"
     },
@@ -607,8 +608,15 @@
       ],
       "sortOrder": "custom"
     },
+    "java": {
+      "children": [
+        "java/注解大全.md"
+      ],
+      "sortOrder": "custom"
+    },
     "technology": {
       "children": [
+        "technology/Codex Windows 更新后 Chrome 与 Computer Use 插件消失修复记录.md",
         "technology/Wallpaper Engine 场景壁纸修复与重新打包流程记录.md",
         "technology/Git 与 GitHub 从零上手.md",
         "technology/Git 本地与远程同时修改时的冲突处理.md",
